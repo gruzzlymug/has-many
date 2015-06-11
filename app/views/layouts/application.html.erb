@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HasMany</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div>
+  <%= link_to "Home", work_orders_path %> |
+  <%= link_to "Add Tech", new_technician_path %> |
+  <%= link_to "Add Customer", new_customer_path %> |
+  <%= link_to "Add Work Order", new_work_order_path %>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

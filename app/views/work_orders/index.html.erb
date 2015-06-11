@@ -1,0 +1,21 @@
+<h1>Work Orders</h1>
+<% if @work_orders.length > 0 %>
+<table>
+<tr>
+  <th>Order #</th>
+  <th>Title</th>
+  <th>Tech</th>
+  <th>Customer</th>
+</tr>
+  <% @work_orders.each do |w| %>
+<tr>
+  <td><%= w.id %></td>
+  <td><%= w.title %></td>
+  <td><%= w.technician.name %></td>
+  <td><%= w.customer.name %></td>
+</tr>
+</table>
+  <% end %>
+<% else %>
+    No Orders!
+<% end %>
