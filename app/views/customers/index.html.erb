@@ -1,0 +1,9 @@
+<h1>Customers</h1>
+
+<% if @customers.length > 0 %>
+  <% @customers.each do |c| %>
+    <div><%= c.name %></div>
+  <% end %>
+<% else %>
+  <div>No Customers!</div>
+<% end %>
